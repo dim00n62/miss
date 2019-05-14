@@ -1,29 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="app">
+    <img
+      src="./assets/header.png"
+      class="header"
+    />
+    <view-container/>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import ViewContainer from './ViewContainer.vue';
 
-export default Vue.extend({
+export default {
   name: 'app',
   components: {
-    HelloWorld,
-  },
-});
+    ViewContainer
+  }
+};
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8eddc;
+    height: 100vh;
+  }
+
+  .app {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/background-img.png');
+    background-repeat: round;
+    background-size: contain;
+  }
+
+    .header {
+      position: absolute;
+      top: 0;
+    }
 </style>
