@@ -3,6 +3,8 @@
 Credentials
 admin/12345
 
+Demo here: https://dim00n62.github.io/miss/
+
 ## Project setup
 ```
 npm install
