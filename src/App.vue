@@ -38,7 +38,7 @@ export default {
     align-items: center;
     background-image: url('./assets/background-img.png');
     background-repeat: round;
-    background-size: contain;
+    background-size: 60px;
   }
 
     .header {
