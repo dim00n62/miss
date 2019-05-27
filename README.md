@@ -1,5 +1,8 @@
 # miss
 
+Credentials
+admin/12345
+
 ## Project setup
 ```
 npm install
